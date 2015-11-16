@@ -1,0 +1,524 @@
+
+/* FONTS -------------- */
+
+@font-face {
+	font-family: 'Novecento';
+	src: url('../fonts/Novecentosanswide-Normal-webfont.eot');
+    src: url('../fonts/Novecentosanswide-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Novecentosanswide-Normal-webfont.woff') format('woff'),
+         url('../fonts/Novecentosanswide-Normal-webfont.ttf') format('truetype');
+}
+
+
+/*********************
+GENERAL
+**********************/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 1em/1.5 'Open Sans', sans-serif;
+	background-color: #fff;
+	/*background-image: url('../img/topImage.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;*/
+}
+
+.hide {
+	text-indent: -999em;
+	height: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h2, h4 {
+	text-transform: uppercase;
+}
+
+a {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/*********************
+HEADER
+**********************/
+
+.top-section {
+	padding: 5% 3%;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+
+.header-section {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.header-section h2 {
+	font-family: 'Novecento', sans-serif;
+	font-weight: normal;
+	color: #4d4d4d;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.header-section strong {
+	line-height: 1.5;
+}
+
+.header-section span {
+	color: #b41c0f;
+}
+
+.horizontal-line {
+	width: 55%;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.advantages-section {
+	width: 78%;
+	margin: 0 auto;
+}
+
+.number {
+	display: inline-block;
+	text-align: center;
+	width: 28px;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+.number span {
+	font-size: 0.9em;
+	line-height: 26px;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+
+section h3 {
+	font-size: initial;
+	font-size: inherit;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+
+/*********************
+FORM
+**********************/
+
+.form-title {
+	font-family: 'Novecento', sans-serif;
+	color: #5A9BFF;
+	padding: 0 7%;
+	margin: 15px 0;
+}
+
+form {
+	background-color: rgba(204, 204, 204, 0.6);
+	padding-top: 40px;
+	/*text-align: center;*/
+}
+
+.form-content {
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	border: none;
+	font-size: 0.875em;
+	color: rgba(0, 0, 0, 0.8);
+	padding: 10px 15px;
+	margin-bottom: 25px;
+	width: 100%;
+	display: block;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(100, 100, 100, 0.5),
+	                          1px 1px 0px 0px rgba(100, 100, 100, 0.1);
+	-moz-box-shadow:    inset 1px 1px 1px 0px rgba(100, 100, 100, 0.5),
+	                          1px 1px 0px 0px rgba(100, 100, 100, 0.1);
+	box-shadow:         inset 1px 1px 1px 0px rgba(100, 100, 100, 0.5),
+	                          1px 1px 0px 0px rgba(100, 100, 100, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+	border: 1px solid #5a9bff;
+	-webkit-box-shadow: 0px 0px 1px #5a9bff;
+    -moz-box-shadow:    0px 0px 1px #5a9bff;
+    box-shadow:         0px 0px 1px #5a9bff;
+}
+
+input::-webkit-input-placeholder {
+	opacity: 0.5;
+}
+input::-moz-placeholder {
+	opacity: 0.5;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	opacity: 0.5;
+}
+input:-ms-input-placeholder { 
+	opacity: 0.5;
+}
+
+.form-col {
+	font-size: 0.6875em;
+	color: rgba(0, 0, 0, 0.8);
+	text-align: initial;
+	text-align: inherit;
+	width: 87%;
+	margin-bottom: 15px;
+}
+
+.form-col-4 {
+	margin-bottom: 35px;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+}
+
+label {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.form-col a {
+	margin-left: 20px;
+}
+
+.form-col .inline-link {
+	margin-left: 0;
+}
+
+button {
+	border: none;
+	background: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+button:focus {
+	outline: none;
+}
+
+
+/*********************
+FOOTER
+**********************/
+
+footer {
+	font-size: 0.68em;
+	color: rgba(0, 0, 0, 0.6);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+footer img {
+	vertical-align: top;
+}
+
+footer p {
+	display: inline-block;
+	width: 75%;
+	margin-top: 7px;
+	margin-left: 20px;
+	text-align: initial;
+	text-align: inherit;
+}
+
+
+
+/*******************************************
+RESPONSIVE 640px
+********************************************/
+
+@media screen and (min-width: 640px) {
+
+	/*********************
+	HEADER
+	**********************/
+
+	header h2 {
+		line-height: 1.2;
+	}
+
+	.header-section strong {
+		font-size: 1.4em;
+		line-height: 1.1;
+	}
+
+	.horizontal-line {
+	width: 40%;
+	}
+
+	.advantages-section {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	/*********************
+	FORM
+	**********************/
+
+	form {
+		padding-bottom: 15px;
+	}
+
+	.form-content {
+		max-width: 530px;
+		margin: 0 auto;
+	}
+
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"] {
+		width: 47%;
+		display: inline-block;
+	}
+
+	.input-section {
+		position: relative;
+		height: 128px;
+	}
+
+	#nip,
+	#telephone,
+	#mail {
+		position: absolute;
+	}
+
+	#nip {
+		left: 0;
+		bottom: 0;
+	}
+
+	#telephone {
+		right: 0;
+		top: 0;
+	}
+
+	#mail {
+		right: 0;
+		bottom: 0;
+	}
+
+	.acceptances-section {
+		position: relative;
+		height: 250px;
+	}
+
+	.form-col {
+		display: inline-block;
+		width: 46.8%;
+	}
+
+	.form-col-1,
+	.form-col-2 {
+		margin-top: 15px;
+		margin-bottom: 35px;
+	}
+
+	.form-col-2 {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.form-col-3,
+	.form-col-4 {
+		position: absolute;
+		top: 50%;
+	}
+
+	.form-col-3 {
+		right: 0;
+	}
+
+	.form-col-4 {
+		left: 0;
+	}
+
+	button {
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+/*******************************************
+RESPONSIVE 960px
+********************************************/
+
+@media screen and (min-width: 960px) {
+
+	/*********************
+	GENERAL
+	**********************/
+
+	body {
+		background-image: url('../img/topImage.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+
+	.top-section {
+		background: none;
+		padding: 4% 0;
+		height: 488px;
+		width: 63%;
+		position: relative;
+		left: 37%;
+	}
+
+	.horizontal-line {
+		width: 30%;
+	}
+
+	/*********************
+	FORM
+	**********************/
+
+	.form-title {
+		padding: 0 4%;
+	}
+
+	form {
+		padding-bottom: 36px;
+	}
+
+	.form-content {
+		max-width: 870px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.input-section {
+		width: 60%;
+	}
+
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"] {
+		width: 47%;
+		display: inline-block;
+	}
+
+	#company,
+	#telephone {
+		margin-bottom: 35px;
+	}
+
+	#nip,
+	#mail {
+		margin-bottom: 17px;
+	}
+
+	.form-col {
+		width: 20%;
+	}
+
+	.acceptances-section {
+		position: initial;
+		position: inherit;
+		height: initial;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.form-col-1,
+	.form-col-2,
+	.form-col-3,
+	.form-col-4 {
+		position: initial;
+		position: inherit;
+		left: initial;
+		left: inherit;
+		right: initial;
+		right: inherit;
+		top: initial;
+		top: inherit;
+		margin: 0;
+		vertical-align: top;
+		margin-right: 40px;
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		margin: 0;
+	}
+
+	footer {
+		width: 80%;
+	}
+}
+
+
+
+/*******************************************
+MINOR RESPONSIVE BREAKPOINTS
+********************************************/
+
+@media screen and (min-width: 550px) and (max-width: 639px) {
+	.form-title {
+		width: 88%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 790px) and (max-width: 959px) {
+	.form-title {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.form-title {
+		width: 77%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 1480px) {
+	.form-title {
+		width: 70%;
+	}
+}

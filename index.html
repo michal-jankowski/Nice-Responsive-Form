@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KRD BIG SA - Umowa SOP Testowa</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1 class="hide">Formularz KRD</h1>
+        <div class="top-section">
+            <div class="header-section">
+                <header>
+                    <h2>Korzystaj z usług <br>Krajowego Rejestru Długów <br><strong>przez <span>6 miesięcy</span> za darmo!</strong></h2>
+                </header> <!-- header-section end -->
+            </div>
+
+            <hr class="horizontal-line">
+
+            <div class="advantages-section">
+                <section>
+                    <h2 class="hide">Główne zalety korzystania z KRD</h2>
+                    <div class="number"><span>1</span></div>
+                    <h3>Dopisuj dłużników i odzyskuj swoje pieniądze</h3>
+                    <div class="number"><span>2</span></div>
+                    <h3>Sprawdzaj kontrahentów i zabezpieczaj się przed spiralą zadłużeń</h3>
+                    <div class="number"><span>3</span></div>
+                    <h3>Monitoruj klientów i reaguj na bieżąco w razie potrzeby</h3>
+                </section>
+            </div> <!-- advantages-section end -->
+        </div> <!-- top-section end -->
+
+        <h4 class="form-title">Wypełnij formularz</h4>
+
+        <form action="" method="">
+            <div class="form-content">
+                <div class="input-section">
+                    <input type="text" id="company" name="user_company" placeholder="Nazwa firmy" required>
+                    <input type="text" id="nip" name="user_nip" placeholder="NIP" required>
+                    <input type="tel" id="telephone" name="user_telephone" placeholder="Telefon" required>
+                    <input type="email" id="mail" name="user_mail" placeholder="Adres e-mail" required>
+                </div> <!-- input-section end -->
+
+                <div class="acceptances-section">
+                    <div class="form-col form-col-1">
+                        <input type="checkbox" id="policy" value="policy_accept" name="user_acceptances"><label for="policy">Wysłanie zgłoszenia jest jednoznaczne z akceptacją <a href="#" class="inline-link">Regulaminu</a></label>
+                    </div>
+
+                    <div class="form-col form-col-2">
+                        <input type="checkbox" id="direct_marketing" value="direct_marketing_acceptance" name="user_acceptances"><label for="direct_marketing">Wyrażam zgodę na wykorzystanie telekomunikacyjnych urządzeń końcowych i automatycznych systemów wywołujących dla celów marketingu bezpośredniego</label>
+                        <br>
+                        <a href="#">więcej</a>
+                    </div>
+
+                    <div class="form-col form-col-3">
+                        <input type="checkbox" id="indirect_marketing" value="indirect_marketing_acceptance" name="user_acceptances"><label for="indirect_marketing">Wyrażam zgodę na otrzymywanie informacji handlowych za pomocą środków komunikacji elektronicznej</label>
+                        <br>
+                        <a href="#">więcej</a>
+                    </div>
+
+                    <div class="form-col form-col-4">
+                        <input type="checkbox" id="data_processing" value="data_processing_acceptance" name="user_data_processing"><label for="data_processing">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U. z 2014 r. poz. 1182 ze zm.).</label>
+                        <br>
+                        <a href="#">więcej</a>
+                    </div>
+                </div> <!-- acceptances-section end -->
+
+                <button type="submit"><img src="img/btnWygenerujUmowe.png" alt="Wygeneruj Umowe przycisk"></button>
+            </div> <!-- form-content end -->
+        </form>
+
+        <footer>
+            <img src="img/KRDlogoFooter.png" alt="KRD - logo">
+            <p>Przesyłka wysłana na zlecenie: Krajowy Rejestr Długów Biuro Informacji Gospodarczej SA, ul. Armii Ludowej 21, 51-214 Wrocław, spółka zarejestrowana w Sądzie Rejonowym dla Wrocławia-Fabrycznej, VI Wydział Gospodarczy; KRS: 0000169851; NIP: 8951794707; kapitał założycielski: 4.000.000 zł, wpłacony w całości.</p>
+        </footer>
+      
+    </body>
+</html>
